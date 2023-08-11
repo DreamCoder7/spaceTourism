@@ -1,0 +1,41 @@
+.Header {
+  background-image: url("../../assets/Home/background-home-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-8);
+}
+
+.Title {
+  font-size: var(--fontSize-11);
+  color: var(--color--gray-50);
+}
+
+.SubTitle {
+  font-size: var(--fontSize-3);
+  color: var(--color--gray-300);
+
+  display: block;
+}
+
+.IntroText {
+  font-size: var(--fontSize-4);
+  color: var(--color--gray-500);
+  line-height: var(--lineHeight-normal);
+}
+
+.Btn {
+  all: unset;
+
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--color--gray-100);
+  border-radius: 50%;
+  font-size: var(--fontSize-4);
+}
