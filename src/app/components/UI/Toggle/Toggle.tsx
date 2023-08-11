@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { CgMenuRight, RiCloseFill } from "@/app/constants";
+import { CgMenuRight } from "@/app/constants";
 import { ToggleProps } from "@/app/types";
 import classes from "./Toggle.module.css";
 
@@ -9,11 +9,7 @@ function Toggle(props: ToggleProps) {
 
   return (
     <button onClick={toggle} className={classes.Toggle}>
-      {isNavOpen ? (
-        <RiCloseFill className={classes.Icon} />
-      ) : (
-        <CgMenuRight className={classes.Icon} />
-      )}
+      {isNavOpen ? null : <CgMenuRight className={classes.Icon} />}
     </button>
   );
 }

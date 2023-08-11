@@ -1,5 +1,6 @@
 .Toggle {
-    all: unset;
+  all: unset;
+  cursor: pointer;
 }
 
 .Icon {

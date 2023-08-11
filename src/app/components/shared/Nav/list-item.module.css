@@ -1,7 +1,33 @@
 .ListItem {
   list-style: none;
+
+  position: relative;
+}
+
+.Active::after {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 3.2rem;
+  background-color: var(--color--gray-100);
+
+  position: absolute;
+  right: 0;
+  top: -9px;
 }
 
 .Link {
   text-decoration: none;
+  font-size: var(--fontSize-3);
+  color: var(--color--gray-100);
+
+  display: flex;
+  gap: var(--spacing-4);
+  align-items: center;
+}
+
+.Num {
+  color: var(--color--gray-50);
+  font-weight: var(--fontWeight-semibold);
+  letter-spacing: 2px;
 }

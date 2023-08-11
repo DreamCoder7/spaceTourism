@@ -1,10 +1,14 @@
 .Header {
-  background-image: url("../../assets/Home/background-home-mobile.jpg");
   background-size: cover;
   background-position: center;
 
   height: 100vh;
   width: 100%;
+  padding: 0 var(--spacing-8);
+}
+
+.Content {
+  padding-top: var(--spacing-16);
 
   display: flex;
   flex-direction: column;
@@ -15,6 +19,7 @@
 .Title {
   font-size: var(--fontSize-11);
   color: var(--color--gray-50);
+  line-height: var(--lineHeight-relaxed);
 }
 
 .SubTitle {
@@ -25,8 +30,9 @@
 }
 
 .IntroText {
-  font-size: var(--fontSize-4);
-  color: var(--color--gray-500);
+  text-align: center;
+  font-size: var(--fontSize-3);
+  color: var(--color--gray-400);
   line-height: var(--lineHeight-normal);
 }
 
@@ -35,7 +41,14 @@
 
   width: 4rem;
   height: 4rem;
+  padding: var(--spacing-20);
   background-color: var(--color--gray-100);
   border-radius: 50%;
   font-size: var(--fontSize-4);
+  margin-top: var(--spacing-32);
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
